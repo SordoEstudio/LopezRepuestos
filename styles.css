@@ -1,0 +1,228 @@
+:root {
+  --primary-color: #002b5c; /* Azul oscuro */
+  --primary-color-light: #004080; /* Azul más claro */
+  --primary-color-dark: #001a3c; /* Azul más oscuro */
+  --primary-color-semitrans: rgba(0, 43, 92, 0.5); /* Azul semi-transparente */
+
+  --secondary-color: #a32638; /* Rojo oscuro */
+  --secondary-color-light: #c0392b; /* Rojo más claro */
+  --secondary-color-dark: #721522; /* Rojo más oscuro */
+  --secondary-color-light-semitrans: rgb(192, 57, 43,0.5); /* Rojo más claro */
+  --secondary-color-dark-semitrans: rgb(114, 21, 34,0.8); /* Rojo más oscuro */
+  --secondary-color-semitrans: rgba(163, 38, 56, 0.3); /* Rojo semi-transparente */
+
+  --background-color: #16161d; /* Fondo oscuro */
+  --background-color-: #121212; /* Fondo ligeramente más claro */
+  --background-color-dark: #0d0d0d; /* Fondo más oscuro */
+  --background-color-semitrans: rgba(18, 18, 18, 0.7); /* Fondo semi-transparente */
+
+  --text-color: #e0e0e0; /* Texto blanco para buena legibilidad */
+  --text-color-light: #f1f1f1; /* Texto ligeramente más claro */
+  --text-color-dark: #b0b0b0; /* Texto ligeramente más oscuro */
+  --text-color-semitrans: rgba(224, 224, 224, 0.5); /* Texto semi-transparente */
+
+  --hero-image: url("./assets/heroImage.webp");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header .logo {
+  height: 50px;
+}
+
+header nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1.2em;
+}
+
+.hero {
+  position: relative;
+  background-image: var(--hero-image); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ajusta la altura según tus necesidades */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-btn {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 30px 60px;
+  box-shadow: #001a3c;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hero-btn:hover {
+  background-color: var(--primary-color-light);
+}
+.hero-text {
+  text-align: center;
+  background: var(--background-color-semitrans); /* Fondo semi-transparente para mejorar la legibilidad */
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.5em;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.informacion-contacto {
+  max-width: 1000px;
+  margin:0 auto;
+  padding: 20px 20px 0 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.informacion-contacto-mapa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mapa {
+  flex: 1;
+  min-width: 300px; /* Asegura que en pantallas pequeñas se apilen */
+  margin: 0px 10px 10px 10px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.informacion-contacto h2 {
+  font-size: 2em;
+  color: var(--secondary-color);
+}
+
+.informacion-contacto-mapa{
+  background-color: var(--background-color);
+}
+.informacion-contacto a{
+  font-size: 1.2em;
+  color: var(--text-color-light);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Hereda el color del contenedor */
+  margin-right: 20px; /* Espacio entre los enlaces */
+}
+.informacion-contacto a:hover{
+  color:var(--secondary-color-light)
+}
+.informacion-contacto ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+.informacion-contacto ul li {
+  font-size: 1em;
+display:flex;
+align-items: center;
+padding: 10px 0;
+  color: var(--text-color-light);
+}
+.informacion-contacto ul li img.icon {
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  width: 24px; /* Ajusta el tamaño del icono según sea necesario */
+  height: auto; /* Mantiene la proporción del icono */
+}
+
+.informacion-contacto ul li p {
+  margin: 0; /* Elimina márgenes para centrar verticalmente */
+  color: var(--text-color-light); /* Usa una variable de color para consistencia */
+}
+
+.formulario-contacto {
+  padding-top: 40px;
+margin:0 auto;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.formulario-contacto h2 {
+  font-size: 2em;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.formulario-contacto form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulario-contacto label {
+  font-size: 1em;
+  color: var(--text-color-light);
+}
+
+.formulario-contacto input, 
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+.formulario-contacto-btn {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+}
+.formulario-contacto-btn:hover {
+background-color: var(--primary-color-light);
+}
+.contact-form-loader{
+  display: none;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--background-color-dark);
+  color: var(--text-color);
+}
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 10px;
+}

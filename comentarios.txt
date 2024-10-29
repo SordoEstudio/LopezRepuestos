@@ -1,0 +1,27 @@
+TAREAS PEQUEÑAS
+1 - Dar funcionalidad a los Links de comunicacion
+- mail to al mail ?
+- facebook a facebook ?
+- Mensaje personalizado a wsp
+
+2 - Formulario de contacto funcional (ver mircha)
+- Loader al enviar
+- Respuesta al enviar "Gracias por tu mensaje nos estaremos comunicando con usted a la brevedad" (modal o toast)
+
+3 - Validacion de formulario
+https://www.youtube.com/watch?v=eve9v2g6JXc&ab_channel=jonmircha
+
+4 - Colocar Logo de 'Lopez Repuestos' (lale)
+
+PRIMER MVP LISTO PARA PUBLICAR
+
+////////////////////////////////////////////////////////////////////////////////
+
+PROXIMOS PASOS
+- Agregar marcas de repuestos
+    idea: carrousel de marcas
+
+- Ver SEO y posicionamiento en motores de busqueda
+por marca y por rubro
+
+
